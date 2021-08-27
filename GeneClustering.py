@@ -23,6 +23,7 @@ for columnNumber in range(2, columnCount):
         singleCellName = sheet.cell(row=1, column=columnNumber)
         datum = sheet.cell(row=rowNumber, column=columnNumber)
         mapPair = (geneName.value, singleCellName.value)
+        geneExpression[mapPair] = datum.value
 
 geneExpressionCount = {}
 geneExpressionTotal = {}
