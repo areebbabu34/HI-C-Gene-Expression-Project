@@ -17,8 +17,8 @@ rowCount = sheet.max_row
 
 geneExpression = {}
 
-for columnNumber in range(2, columnCount):
-    for rowNumber in range(2, rowCount):
+for columnNumber in range(2, columnCount+1):
+    for rowNumber in range(2, rowCount+1):
         geneName = sheet.cell(row=rowNumber, column = 1)
         singleCellName = sheet.cell(row=1, column=columnNumber)
         datum = sheet.cell(row=rowNumber, column=columnNumber)
@@ -32,7 +32,7 @@ geneExpressionPercentage = {}
 for key in geneExpression:
     if (key[0] not in geneExpressionCount):
         geneExpressionCount[key[0]] = 0
-        geneExpressionTotal[key[0]] = 1
+        geneExpressionTotal[key[0]] = 0
     if (geneExpression[key] > 0):
         geneExpressionCount[key[0]] = geneExpressionCount[key[0]] + 1
         geneExpressionTotal[key[0]] = geneExpressionTotal[key[0]] + 1
