@@ -65,22 +65,3 @@ while repeat:
         repeat = False
 
 print("Your data has been stored in text files")
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
