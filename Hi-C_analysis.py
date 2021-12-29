@@ -45,7 +45,7 @@ HICcooler = cooler.Cooler('./4DNFIMDQ6WYX.mcool::resolutions/10000000')
 
 HICmatrix = HICcooler.matrix(balance = True) 
 
-geneLocationFile = open("chromosomalAnnotations0-100.txt", 'r')
+geneLocationFile = open("chromosomalAnnotations0-10.txt", 'r')
 tempFile = open("temp.txt", 'w')
 
 geneLocationFile.readline()  #reads first line which is just a description
